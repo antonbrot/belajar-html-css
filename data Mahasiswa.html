@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Mahasiswa</title>
+  </head>
+  <body bgcolor="#9AD0C2">
+    <table border="1" cellpadding="5" cellspacing="1" width="100%">
+        <tbody><tr><th colspan="3" bgcolor="#2D9596"><marquee width="80%" scrollamount="20" behavior="scroll" direction="right">Rayhan Hafidz Al Malik</marquee></th>
+
+    <table>
+      
+          
+        <h2><center>DATA MAHASISWA</h2></center>
+        <h2><center>UNIVERSITAS TEKNIK INFORMATIKA</h2></center>
+        <hr color="Black" />
+<pre>
+      <form action="login.php" method="post">
+        <label>NIM                    : </label><input type="number" name="number" placeholder="NIM" />
+        
+        <label>Nama Mahasiswa         : </label><input type="text" name="username" placeholder="Nama Mahasiswa" />
+        
+        <label>JENIS KELAMIN          : </label><select id="jk">
+        <option value="LAKI-LAKI" >Laki-laki</option>
+        <option value="PEREMPUAN">Perempuan</option>
+        </select>
+          
+      
+
+        <label>AGAMA                  : </label><select id="agama">
+        <option value="Islam">Islam</option>
+        <option value="kristen">Kristen</option>
+        <option value="hindu">Hindu</option>
+        <option value="budha">Budha</option>
+        <option value="konghucu">Konghucu</option>
+        <option value="Atheis">Katholik</option>
+
+        </select>
+        
+        <label>STATUS                 : </label><input type="checkbox" name="status" value="SUDAH MENIKAH" />SUDAH MENIKAH<input type="checkbox" name="status" value="BELUM MENIKAH" />BELUM MENIKAH
+                                
+        <label>JURUSAN DI UNIKOM      :</label> <select name="jurusan" id="id">
+        <option value="Teknik INFORMATIKA">Teknik informatika</option>
+        <option value="Teknik komputer">Teknik komputer</option>
+        <option value="hukum">Hukum</option>
+        </select>
+          
+        <label>Komentar               : </label>
+                                 <textarea name="biografi: " cols="30" rows="10"> </textarea>
+                                 <button>kirim</button> <button>ulang</button>
+        </p>
+      </form>
+    </table>
+  </pre>
+  </body>
+</html>
