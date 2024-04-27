@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tugas 5</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="container">
+      <div class="header">
+        <img src="Logo-Headers.png" alt="" class="logo" />
+        <ul class="navbar">
+          <li>
+            <div class="home"><b><a href="#">HOME</a></b></div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <span><b>PROFILE</b></span>
+              <div class="dropdown-content">
+                <a href="#"><b>Data Pribadi</b></a>
+                <a href="#"><b>Kegiatan</b></a>
+                <a href="#"><b>Skill</b></a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="galery"><b><a href="#">GALERY</a></b></div>
+          </li>
+          <li>
+            <div class="login-btn"><b><a href="#" id="loginButton">LOGIN</a></b></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- NAVBAR -->
+
+    <!-- LOGIN FORM -->
+    <div class="login-container" id="loginForm">
+        <div class="close-btn" id="closeLoginForm">×</div>
+        <form class="login-form">
+            <h2>Login</h2>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+            <p>Don't have an account? <a href="#">Register</a></p>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <!-- LOGIN FORM END -->
+
+    <!-- SIDE CONTENT -->
+    <div class="content">
+      <div class="jadwal">
+        <h3>JADWAL X RPL</h3>
+        <ul>
+          <li><a href="senin.html">Senin</a></li>
+          <li><a href="#">Selasa</a></li>
+          <li><a href="#">Rabu</a></li>
+          <li><a href="#">Kamis</a></li>
+          <li><a href="#">Jum'at</a></li>
+        </ul>
+      </div>
+      <!-- SIDE CONTENT END -->
+
+      <!-- MAIN CONTENT -->
+      <div class="foto">
+        <img src="Foto SMKN 6 Jakarta.png" alt="" />
+        <h3>SEJARAH SMKN 6 JAKARTA</h3>
+        <p>
+          SMKN 6 Jakarta Selatan didirikan untuk memenuhi kebutuhan akan pendidikan menengah kejuruan di wilayah tersebut. Didirikan oleh pemerintah daerah sebagai bagian dari upaya untuk memberikan akses pendidikan yang lebih luas kepada masyarakat.  Selain memberikan pendidikan kepada siswa, SMKN 6 Jakarta Selatan juga aktif dalam berbagai kegiatan sosial dan ekstrakurikuler yang memberikan manfaat bagi masyarakat sekitar. Melalui program-program ini, sekolah berperan aktif dalam pembangunan masyarakat.
+        </p>
+        <p class="nama">@Rayhan</p>
+      </div>
+    </div>
+    <!-- MAIN CONTENT END -->
+
+    <!-- FOOTER -->
+    <div class="footer">
+    <!-- FOOTER END -->
+    </div>
+
+    <script>
+       document.getElementById('loginButton').addEventListener('click', function() {
+            document.getElementById('loginForm').classList.add('show');
+        });
+
+        document.getElementById('closeLoginForm').addEventListener('click', function() {
+            document.getElementById('loginForm').classList.remove('show');
+        });
+    </script>
+  </body>
+</html>
